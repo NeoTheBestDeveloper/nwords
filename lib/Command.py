@@ -1,7 +1,7 @@
 from subprocess import run
 
-from Database import Database
-from Options import Options
+from lib.Database import Database
+from lib.Options import Options
 
 
 class Command:
