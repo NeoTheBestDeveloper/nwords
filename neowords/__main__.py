@@ -4,9 +4,9 @@ from os import getenv
 from sys import argv
 from pathlib import Path
 
-from lib.Database import Database
-from lib.OptionsHandler import OptionsHandler
-from lib.Command import Command
+from .Database import Database
+from .OptionsHandler import OptionsHandler
+from .Command import Command
 
 
 def main():

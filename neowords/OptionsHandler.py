@@ -1,4 +1,4 @@
-from lib.Options import Options
+from .Options import Options
 
 
 class OptionsHandler:

@@ -1,7 +1,7 @@
 from subprocess import run
 
-from lib.Database import Database
-from lib.Options import Options
+from .Database import Database
+from .Options import Options
 
 
 class Command:
@@ -72,7 +72,7 @@ Commands:
     help                    - show this text.
 
 Settings:
-    NW_PATH                 - path to current words file"""
+    NW_PATH                 - path to the current words file"""
 
         print(doc)
 
