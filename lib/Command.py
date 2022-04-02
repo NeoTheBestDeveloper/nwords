@@ -69,7 +69,11 @@ Commands:
     showntf <WORD>          - like show, but show content with nofification.
     showall                 - print all words to stdout.
     change <WORD> <NEWMEAN> - change word meaning.
-    help                    - show this text."""
+    help                    - show this text.
+
+Settings:
+    NW_PATH                 - path to current words file"""
+
         print(doc)
 
     def __set_command(self, command_name: str):
