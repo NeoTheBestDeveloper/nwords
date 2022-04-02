@@ -46,7 +46,9 @@ class Command:
 
     @staticmethod
     def __add_word(db: Database, options: Options):
-        db.add(options.word, options.mean)
+        db_result = db.add(options.word, options.mean)
+        if db_result == -1:
+            print("Error: word already exists")
 
     @staticmethod
     def __change_word(db: Database, options: Options):

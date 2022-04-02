@@ -27,9 +27,12 @@ class Database:
                 self.__connected = True
         return self.__connected
 
-    def add(self, word: str, meaning: str):
-        with open(self.__path, "a") as db:
-            db.write(f"{word}:{meaning}\n")
+    def add(self, word: str, meaning: str) -> int:
+        if self.search(word) == -1:
+            with open(self.__path, "a") as db:
+                db.write(f"{word}:{meaning}\n")
+            return 0
+        return -1
 
     def search(self, word: str) -> int:
         with open(self.__path, "r") as db:
