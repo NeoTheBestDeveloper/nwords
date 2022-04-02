@@ -71,7 +71,8 @@ class Database:
             lines.pop(line_num)
 
             with open(self.__path, "w") as db:
-                db.write(*lines)
+                if lines:
+                    db.write(*lines)
             return 0
         return -1
 
